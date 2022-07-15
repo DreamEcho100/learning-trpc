@@ -10,3 +10,11 @@ export const nameRouter = createRouter().query('getName', {
 		return { greeting: `Hello ${input.name}` };
 	},
 });
+// .query('nameById/[id]', {
+// 	input: z.object({
+// 		name: z.string().nullish(),
+// 	}),
+// 	resolve: ({ input }) => {
+// 		return { greeting: `Hello ${input.name}` };
+// 	},
+// });
